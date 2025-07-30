@@ -140,8 +140,6 @@ plt.title('Feature Importance')
 plt.tight_layout()
 plt.show()
 
-pip install tensorflow pandas scikit-learn matplotlib seaborn
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
