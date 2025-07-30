@@ -78,7 +78,7 @@ personal_df = load_csv(personal_file) if personal_file else None
 energy_df = None
 if energy_file:
     if energy_file.name.endswith(".zip"):
-        energy = pd.read_csv("content/AEP_hourly.csv")
+        energy = pd.read_csv("AEP_hourly.csv")
         energy_df = load_csv(f"content/{filename}")
     else:
         energy_df = load_csv(energy_file)
