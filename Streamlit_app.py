@@ -78,7 +78,7 @@ personal_df = load_csv(personal_file) if personal_file else None
 energy_df = None
 if energy_file:
     if energy_file.name.endswith(".zip"):
-        filename = unzip_file(AEP_hourly.csv.zip)
+        filename = unzip_file(AEP_hourly.csv)
         energy_df = load_csv(f"data/{filename}")
     else:
         energy_df = load_csv(energy_file)
