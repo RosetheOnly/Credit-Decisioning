@@ -12,14 +12,6 @@ import numpy as np
 import zipfile
 import os
 
-# === Unzip the datasets if needed ===
-def unzip_file(zip_path):
-    if zip_path.endswith(".zip"):
-        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-            zip_ref.extractall("/content")
-
-unzip_file("/content/AEP_hourly.csv.zip")
-unzip_file("/content/PS_20174392719_1491204439457_log.csv.zip")
 # Personal finance file is already CSV, not zipped
 
 # === Load the data ===
