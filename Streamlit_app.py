@@ -16,7 +16,7 @@ import os
 
 # === Load the data ===
 personal = pd.read_csv("/content/Personal_Finance_Dataset.csv")
-paysim = pd.read_csv("/content/PS_20174392719_1491204439457_log.csv")
+paysim = pd.read_csv("/content/https://drive.google.com/file/d/1v6a1CIzHpCXnCMqqVF_YgEocuLadEMZa/view?usp=drive_link")
 energy = pd.read_csv("/content/AEP_hourly.csv")
 
 print("✅ Datasets loaded")
