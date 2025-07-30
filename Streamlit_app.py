@@ -31,7 +31,7 @@ def convert_drive_url_to_download_link(url):
 
 def unzip_file(zip_file):
     with zipfile.ZipFile(zip_file, 'r') as zf:
-        zf.extractall("data/")
+        zf.extractall("content/")
         st.success("✅ Zip extracted!")
         return zf.namelist()[0]
 
@@ -78,7 +78,7 @@ personal_df = load_csv(personal_file) if personal_file else None
 energy_df = None
 if energy_file:
     if energy_file.name.endswith(".zip"):
-        filename = unzip_file(energy_file)
+        filename = unzip_file(AEP_hourly.csv.zip)
         energy_df = load_csv(f"data/{filename}")
     else:
         energy_df = load_csv(energy_file)
