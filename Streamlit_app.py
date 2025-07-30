@@ -224,7 +224,6 @@ print("✅ Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 model.save("/content/credit_model.h5")
 print("✅ Model saved to credit_model.h5")
 
-pip install streamlit pandas matplotlib seaborn fpdf
 
 import streamlit as st
 import pandas as pd
