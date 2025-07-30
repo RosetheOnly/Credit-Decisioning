@@ -15,7 +15,7 @@ import os
 # Personal finance file is already CSV, not zipped
 
 # === Load the data ===
-personal = pd.read_csv("/content/Personal_Finance_Dataset.csv")
+personal = pd.read_csv("../content/Personal_Finance_Dataset.csv")
 paysim = pd.read_csv("/content/https://drive.google.com/file/d/1v6a1CIzHpCXnCMqqVF_YgEocuLadEMZa/view?usp=drive_link")
 energy = pd.read_csv("/content/AEP_hourly.csv")
 
